@@ -1,3 +1,5 @@
+import '../entities/user_entities.dart';
+
 class MyUser {
   String userId;
   String email;

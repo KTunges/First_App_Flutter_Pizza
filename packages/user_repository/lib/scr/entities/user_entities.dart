@@ -18,4 +18,13 @@ class MyUserEntity {
       'hasActiveCart': hasActiveCart,
     };
   }
+
+  static MyUserEntity fromDocument(Map<String, dynamic> doc) {
+    return MyUserEntity(
+      userId: doc['userId'],
+      email: doc['email'] ,
+      name: doc['name'],
+      hasActiveCart: doc['hasActiveCart'],
+    );
+  }
 }
